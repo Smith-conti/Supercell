@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentación de Estilos</title>
+        <link rel="stylesheet" href="assets/css/documentacion.css">
+    </head>
+    <body>
+        <header id="inicio">
+            <h1>📖 Documentación de Estilos CSS</h1>
+            <a href="index.html" class="btn">Inicio</a>
+        </header>
+        <section>
+            <h2>1. Menú de Navegación</h2>
+            <code>
+                nav {<br>
+                &nbsp;&nbsp;position: fixed;<br>
+                &nbsp;&nbsp;top: 0;<br>
+                &nbsp;&nbsp;width: 100%;<br>
+                &nbsp;&nbsp;background: rgba(0,0,0,0.7);<br>
+                &nbsp;&nbsp;display: flex;<br>
+                &nbsp;&nbsp;justify-content: center;<br>
+                &nbsp;&nbsp;align-items: center;<br>
+                }
+            </code>
+            <p>Este bloque define el estilo del menú superior. Se fija en la parte superior de la página (<b>position: fixed</b>), ocupa todo el ancho y tiene un fondo oscuro semitransparente que permite ver un poco del contenido detrás. Además, el uso de <b>display: flex</b> con <b>justify-content: center</b> centra todas las opciones del menú horizontalmente. Esto crea un menú limpio, moderno y fácil de navegar.</p>
+        </section>
+        <section>
+            <h2>2. Header con Imagen de Fondo</h2>
+            <code>
+                header {<br>
+                &nbsp;&nbsp;padding: 160px 20px 120px;<br>
+                &nbsp;&nbsp;background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),<br>
+                &nbsp;&nbsp;url("../img/fondo.jpg") no-repeat center center/cover;<br>
+                &nbsp;&nbsp;color: #fff;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                }
+            </code>
+            <p>El encabezado utiliza una imagen de fondo que ocupa todo el ancho y alto definidos. Se le aplica un <b>degradado oscuro encima</b> para asegurar que el texto sea legible sin importar la claridad de la imagen. Además, el texto se centra en el medio para dar un aspecto de bienvenida atractivo y profesional.</p>
+        </section>
+        <section>
+            <h2>3. Botón / Enlace Estilizado</h2>
+            <code>
+                .btn {<br>
+                &nbsp;&nbsp;display: inline-block;<br>
+                &nbsp;&nbsp;background: linear-gradient(to right, #ff9966, #ff5e62);<br>
+                &nbsp;&nbsp;padding: 15px 40px;<br>
+                &nbsp;&nbsp;border-radius: 50px;<br>
+                &nbsp;&nbsp;color: #fff;<br>
+                &nbsp;&nbsp;text-decoration: none;<br>
+                &nbsp;&nbsp;box-shadow: 0 4px 15px rgba(0,0,0,0.3);<br>
+                }
+            </code>
+            <p>El botón se implementa como un enlace estilizado para poder redirigir a otras secciones. Tiene un <b>degradado en tonos cálidos</b>, esquinas completamente redondeadas (efecto de píldora) y una sombra que lo hace destacar sobre el fondo. Al pasar el mouse, el botón aumenta ligeramente de tamaño, lo que genera una sensación de interactividad.</p>
+        </section>
+        <section>
+            <h2>4. Galería</h2>
+            <code>
+                .grid {<br>
+                &nbsp;&nbsp;display: grid;<br>
+                &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+                &nbsp;&nbsp;gap: 20px;<br>
+                }
+            </code>
+            <p>La galería está diseñada con <b>CSS Grid</b>, una herramienta poderosa que permite organizar imágenes en columnas y filas fácilmente. Aquí se muestran <b>tres columnas</b> de igual tamaño (1fr significa “una fracción del espacio disponible”). El <b>gap</b> añade un espacio uniforme entre cada imagen, logrando un diseño ordenado y agradable a la vista. Cada imagen tiene bordes redondeados y un efecto de zoom al pasar el mouse, lo que hace que la galería sea más dinámica.</p>
+        </section>
+        <section>
+        <h2>5. Reproductor de Video</h2>
+            <code>
+                .video-container {<br>
+                &nbsp;&nbsp;width: 560px;<br>
+                &nbsp;&nbsp;height: 315px;<br>
+                &nbsp;&nbsp;margin: 0 auto;<br>
+                &nbsp;&nbsp;border-radius: 15px;<br>
+                &nbsp;&nbsp;overflow: hidden;<br>
+                &nbsp;&nbsp;box-shadow: 0 6px 20px rgba(0,0,0,0.4);<br>
+                }
+            </code>
+            <p>El reproductor de video mantiene el tamaño estándar de los embeds de YouTube (<b>560x315</b> píxeles). Está centrado en la página y se rodea con <b>bordes redondeados</b> y una <b>sombra</b> para dar sensación de tarjeta flotante. Además, al pasar el mouse, el contenedor puede aumentar ligeramente de tamaño, destacando la sección y animando al usuario a interactuar.</p>
+        </section>
+        <section>
+            <h2>6. Footer</h2>
+            <code>
+                footer {<br>
+                &nbsp;&nbsp;background: #111;<br>
+                &nbsp;&nbsp;color: #bbb;<br>
+                &nbsp;&nbsp;padding: 40px 20px;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                }
+            </code>
+            <p>El pie de página tiene un <b>fondo oscuro</b> para contrastar con el resto del sitio. El texto está en un tono gris claro para ser legible sin resultar demasiado fuerte. Su alineación centrada y la inclusión de enlaces a redes sociales le dan un estilo moderno y funcional. Es el cierre perfecto de la página, ya que comunica profesionalidad y consistencia visual.</p>
+        </section>
+    </body>
+</html>
